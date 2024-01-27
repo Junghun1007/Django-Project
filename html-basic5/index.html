@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            장고 프로젝트 홈
+        </title>
+        <link href = "./bootstrap4/css/bootstrap.min.css" rel = "stylesheet" type ="text/css">
+            <script type="text/javascript" src="add_two_numbers.js"></script>
+            <script type="text/javascript" src="what_time_is_it.js"></script>
+
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">New world</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog_list.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about_me.html">About me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--ID가 inputX인것을 가져와서 키보드가 눌릴때마다 갱신-->
+        <label for="inputA">a</label>
+        <input id = "inputA" onkeyup="doSomething()">
+        <label for="inputB">b</label>
+        <input id = "inputB" onkeyup="doSomething()">
+        
+        <p><span id ="valueA"></span> + <span id ="valueB"></span> = <span id="valueC"></span></p>
+        
+
+        <!-- 현재시간, 버튼추가-->
+        <button onclick = "whatTimeIsit()">현재시간 확인</button>
+
+        
+        <h1>
+            Index 
+        </h1>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+
+</html>
