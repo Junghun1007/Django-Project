@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            장고 프로젝트 홈
+        </title>
+        <link href = "./css-practice.css" rel = "stylesheet" type ="text/css">
+            
+        <!-- 자바 스크립트로 더하기 기능 추가 -->
+        <!--문서상에 ID가 inputX인 것을 받아온후 더한값을 다른 변수에 저장-->
+        <script type ="text/javascript">
+            function doSomething(){
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+                document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+
+            }
+            function whatTimeIsit(){
+                alert(new Date());
+
+            }
+        </script>
+
+    </head>
+    <body>
+        <nav>
+            <a href = "./index.html">Home</a>
+            <a href = "./blog_list.html">Blog</a>
+            <a href = "./about_me.html">About me</a>
+        </nav>
+        <!--ID가 inputX인것을 가져와서 키보드가 눌릴때마다 갱신-->
+        <label for="inputA">a</label>
+        <input id = "inputA" onkeyup="doSomething()">
+        <label for="inputB">b</label>
+        <input id = "inputB" onkeyup="doSomething()">
+        
+        <p><span id ="valueA"></span> + <span id ="valueB"></span> = <span id="valueC"></span></p>
+        
+
+        <!-- 현재시간, 버튼추가 -->
+        <button onclick = "whatTimeIsit()">현재시간 확인</button>
+        
+        
+        <h1>
+            Index 
+        </h1>
+    </body>
+
+</html>
